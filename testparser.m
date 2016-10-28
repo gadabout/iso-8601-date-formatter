@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "ISO8601DateFormatter.h"
+#import "ISO8601DateFormatterOld.h"
 
 int main(int argc, const char **argv) {
 	NSAutoreleasePool *pool = [NSAutoreleasePool new];
@@ -12,7 +12,7 @@ int main(int argc, const char **argv) {
 
 	[NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:+0]];
 
-	ISO8601DateFormatter *formatter = [[[ISO8601DateFormatter alloc] init] autorelease];
+	ISO8601DateFormatterOld *formatter = [[[ISO8601DateFormatterOld alloc] init] autorelease];
 	formatter.parsesStrictly = parseStrictly;
 
 	while(--argc) {
