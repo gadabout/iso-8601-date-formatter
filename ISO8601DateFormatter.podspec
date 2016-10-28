@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
 
-  s.source_files          = 'ISO8601DateFormatter.{h,m}'
-  s.exclude_files         = 'RxCocoa/Platform/**/*.swift'
+  s.source_files          = 'ISO8601DateFormatterOld.{h,m}'
+  s.exclude_files         = 'test*.m', 'timetrial.m', 'unparse*.m', 'ISO8601ForCocoa/ISO8601ForCocoa{,Touch}Tests/**/*.m'
 
-  s.ios.source_files      = 'test*.m'
-  s.osx.source_files      = 'timetrial.m'
-  s.watchos.source_files  = 'unparse*.m'
-  s.tvos.source_files     = 'ISO8601ForCocoa/ISO8601ForCocoa{,Touch}Tests/**/*.m'
+  s.ios.source_files      = 'ISO8601DateFormatterOld.{h,m}'
+  s.osx.source_files      = 'ISO8601DateFormatterOld.{h,m}'
+  s.watchos.source_files  = 'ISO8601DateFormatterOld.{h,m}'
+  s.tvos.source_files     = 'ISO8601DateFormatterOld.{h,m}'
 end
